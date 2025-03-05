@@ -118,6 +118,7 @@ public class OnboardingActivity extends AppCompatActivity {
 
     private void updateDots(int position) {
         Log.d("DOT_DEBUG", "Active dot position: " + position);  // Debugging log
+
         for (int i = 0; i < dots.length; i++) {
             if (i == position) {
                 dots[i].setImageDrawable(ContextCompat.getDrawable(this, R.drawable.dot_selected));
